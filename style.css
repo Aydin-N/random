@@ -1,0 +1,65 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --shadow-color: black;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btn-frame{
+  height: 100px;
+  overflow: hidden;
+  text-align: center;
+}
+.btn-frame p{
+  padding: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  transition: 0.4s;
+}
+.hide-btn{
+  transform: translateY(-100px);
+}
+button{
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: white;
+  border: 3px solid var(--shadow-color);
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0px 10px var(--shadow-color);
+  transition: 0.4s;
+}
+button:active{
+  box-shadow: 0 5px var(--shadow-color);
+  transform: translateY(5px);
+}
+.guess-box{
+  height: 100px;
+  padding: 20px;
+  overflow: hidden;
+}
+.guess{
+  margin: 5px;
+}
+.hide-guess{
+  transform: translateY(100px);
+}
+.replay-frame{
+  height: 100px;
+  overflow: hidden;
+}
+.hide-replay{
+  transform: translateY(100px);
+}
